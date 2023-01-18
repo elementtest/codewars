@@ -5,3 +5,4 @@ function solution(str) {
   x = x.join("");
   return x;
 }
+//reverse a string
