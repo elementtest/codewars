@@ -1,5 +1,5 @@
 #/bin/bash
-#script to make files and add codewars solutions
+#script to make files and add codewars solutions to be uploaded to github
 
 read -p "file name ? " filename
 touch "$filename"
