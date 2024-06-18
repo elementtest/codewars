@@ -5,4 +5,5 @@ read -p "file name ? " filename
 touch "$filename"
 read -p "instructions of the challenge? " shuoming
 echo "$shuoming" >> "$filename"
-vim "$filename"
+xclip -selection clipboard -o >> "$filename"
+cat $filename
