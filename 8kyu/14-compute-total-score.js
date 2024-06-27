@@ -15,4 +15,4 @@ function points(games) {
     }
 
   }
-  return scor
+  return score
