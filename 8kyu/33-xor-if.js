@@ -11,3 +11,9 @@ function xor(a, b) {
     return false
   }
 }
+/*
+easier way to do it  
+function xor(a, b) {
+return a != b
+}
+ */
