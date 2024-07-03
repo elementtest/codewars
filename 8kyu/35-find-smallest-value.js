@@ -12,3 +12,14 @@ function findSmallestInt(arr) {
 //MISTAKES
     made the assumption that i would let the initial value be 0.  this is wrong why.  because if they are are all positive numbers then none of them are less than zero and the thing fails.  you want to make the initial be the first value of the array because it will compare that againast all other values.  if the first value is the lowest then it will stop.
  */
+/*
+ solution::: 
+ function findsmall(param) { 
+    console.log(Math.min(...param));
+ }
+
+ the spread operator (...) in javascript is a powerful and versatile tool that allows for the 
+ expansion of iterable elements like arrays or strings into individual elements or arguments.  
+
+ 
+ */
