@@ -23,6 +23,7 @@ function findSmallestInt(arr) {
 
  the spread operator (...) in javascript is a powerful and versatile tool that allows for the 
  expansion of iterable elements like arrays or strings into individual elements or arguments.  
+ k
 
  
  */
