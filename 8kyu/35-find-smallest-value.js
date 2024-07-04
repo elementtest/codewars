@@ -18,6 +18,9 @@ function findSmallestInt(arr) {
     console.log(Math.min(...param));
  }
 
+ basically the ... spread operator takes it and turns it INTO INDIVIDUAL VALUES aka arguments 
+ for the Math.min built in function to work correctly.  
+
  the spread operator (...) in javascript is a powerful and versatile tool that allows for the 
  expansion of iterable elements like arrays or strings into individual elements or arguments.  
 
