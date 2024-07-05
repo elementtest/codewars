@@ -17,7 +17,7 @@ function findSmallestInt(arr) {
  function findsmall(param) { 
     console.log(Math.min(...param));
  }
-
+k
  basically the ... spread operator takes it and turns it INTO INDIVIDUAL VALUES aka arguments 
  for the Math.min built in function to work correctly.  
 
