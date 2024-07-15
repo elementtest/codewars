@@ -14,3 +14,10 @@ function doubleChar() {
 
 }
 doubleChar();
+/* 
+COMPACT SOLUTION 
+
+const doubleChar = (str) => str.split("").map(c => c + c).join("");
+
+
+*/
