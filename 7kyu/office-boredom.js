@@ -1,5 +1,11 @@
 // given an object list of individuals and jobs (departments) return a boredom score associated with 
 // a message based on the score.  
+/*
+things learned 
+need to declare the totalValue outside of the forEach loop.. forEach placeholder => do what WITH 
+the placeholder
+had two return statements... dont go to solution so fast look thru and carefully think about it.  
+*/
 function boredom(staff) {
     const obb = Object.values(staff);
     let totalValue = 0;
