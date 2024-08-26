@@ -24,4 +24,14 @@ if (xx === oo) {
 
 console.log(XO(str));
 
+/*
+function XO(str) {
+lex x = str.match(/x/gi);
+//   /x/gi ==> looks for the character x... g stands for global means find all occurences of x
+i stands for case insensitive means it will match both X and x
+let o = str.match(/o/gi);
+match all occurences of o (global) not just hte first one and match both o and O with the i insensitive ZZ
 
+
+
+*/
