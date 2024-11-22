@@ -1,0 +1,5 @@
+/*
+given two arrays of numbers
+find commonalities of both
+remove all occurances of commonalities
+*/
