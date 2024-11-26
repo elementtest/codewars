@@ -8,7 +8,6 @@ let nTwo = [6,3,8,3,1,1];
 function killComm(nOne, nTwo) {
     let emptArray = [];
     emptArray = [...nOne, ...nTwo];
-    return emptArray;
 }
 
 
