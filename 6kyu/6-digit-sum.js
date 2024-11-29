@@ -12,23 +12,20 @@ Examples
 493193  -->  4 + 9 + 3 + 1 + 9 + 3 = 29  -->  2 + 9 = 11  -->  1 + 1 = 2
 
 */
-let n = 1234;
+let n = 942;
 function digitalRoot(n) {
-    n = n.toString()
-    n = n.split('');
-    n = n.map(num => parseInt(num));
+    n = n.toString();
+    n = Array.from(n, Number);
     let countt = 0;
-    if (n.length >= 2) {
-        for (let i = 0; i < n.length; i++) {
-            n[i] += countt;
-        
+    for (let i = 0; i < n.length; i++) {
+        countt += n[i];
+        if (countt >= 10) {
+            continue;
+        } else {
+            break;
         }
-        return countt;
-
-    } else {
-        n = n.join('');
-        return n;
     }
+    return countt;
 }
 console.log(digitalRoot(n));
 /*
