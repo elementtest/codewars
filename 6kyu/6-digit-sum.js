@@ -12,3 +12,25 @@ Examples
 493193  -->  4 + 9 + 3 + 1 + 9 + 3 = 29  -->  2 + 9 = 11  -->  1 + 1 = 2
 
 */
+let n = 1234;
+function digitalRoot(n) {
+    n = n.toString()
+    n = n.split('');
+    let countt = 0;
+    if (n.length >= 2) {
+        for (let i = 0; i < n.length; i++) {
+            n[i] += countt;
+            return countt;
+        
+        }
+        return countt;
+
+    } else {
+        n = n.join('');
+        return n;
+    }
+}
+console.log(digitalRoot(n));
+/*
+do not put the return statement in the for loop because on the first round it will immediately exit
+*/
