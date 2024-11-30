@@ -17,16 +17,14 @@ function digitalRoot(n) {
     n = n.toString();
     n = Array.from(n, Number);
     let countt = 0;
+
     for (let i = 0; i < n.length; i++) {
         countt += n[i];
-        if (countt >= 10) {
-            continue;
-        } else {
-            break;
-        }
-    }
+    } 
+        
     return countt;
-}
+
+
 console.log(digitalRoot(n));
 /*
 do not put the return statement in the for loop because on the first round it will immediately exit
