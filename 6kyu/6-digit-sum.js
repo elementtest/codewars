@@ -12,7 +12,7 @@ Examples
 493193  -->  4 + 9 + 3 + 1 + 9 + 3 = 29  -->  2 + 9 = 11  -->  1 + 1 = 2
 
 */
-let n = 942;
+let n = 493193;
 function digitalRoot(n) {
     n = n.toString();
     n = Array.from(n, Number);
@@ -20,9 +20,20 @@ function digitalRoot(n) {
 
     for (let i = 0; i < n.length; i++) {
         countt += n[i];
-    } 
+    }  
+    if (countt >= 10) {
+        countt = countt.toString();
+        countt = Array.from(countt, Number);
+        n = countt;
+        countt = 0;
+        for (let j = 0; j < n.length; j++) {
+            countt += n[j]
+        }
+       
+    }
         
     return countt;
+}
 
 
 console.log(digitalRoot(n));
