@@ -28,6 +28,6 @@ function digitalRoot(n) {
 
 
 console.log(digitalRoot(n));
-/*
+/* 
 do not put the return statement in the for loop because on the first round it will immediately exit
 */
