@@ -21,16 +21,7 @@ function digitalRoot(n) {
     for (let i = 0; i < n.length; i++) {
         countt += n[i];
     }  
-    if (countt >= 10) {
-        countt = countt.toString();
-        countt = Array.from(countt, Number);
-        n = countt;
-        countt = 0;
-        for (let j = 0; j < n.length; j++) {
-            countt += n[j]
-        }
-       
-    }
+
         
     return countt;
 }
