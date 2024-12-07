@@ -42,5 +42,20 @@ regexx.test('input string')
 if equals true then return it in string format
 
 
+let dateString = "07-12-2024";
 
-*/
+let pattern = /(\d{2})-(\d{2})-(\d{4})/;
+
+let newDateString = dateString.replace(pattern);
+
+
+let dateString = whatever; the original string
+
+let pattern = the things you want to replace it with; 
+
+let newDateString = originalstring.replace(pattern)
+
+replace it with the pattern 
+
+
+*/;
