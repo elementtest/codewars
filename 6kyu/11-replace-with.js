@@ -1,4 +1,4 @@
-let str = "(( @";
+let str = "book";
 
 str = str.toLowerCase().split('');
 
