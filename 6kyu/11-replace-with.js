@@ -15,6 +15,7 @@ same = [...new Set(same)];
 
 const newArr = str.map(letter => same.includes(letter) ? ')' : '(');
 
+console.log(typeof(same));
 
 
 
