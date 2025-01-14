@@ -13,10 +13,6 @@ for (let i = 0; i < str.length; i++) {
 }
 same = [...new Set(same)];
 
-const newArr = str.map(letter => same.includes(letter) ? ')' : '(');
+const newArr = str.map(letter => same.includes(letter) ? ')' : '(').join('');
 
-console.log(typeof(same));
-
-
-
-console.log(newArr.join(''));
+console.log(newArr);
