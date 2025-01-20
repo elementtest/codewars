@@ -2,28 +2,38 @@
 given an array of cardinal directions north, south, east, west... decide first whether it takes exactly ten minutes to complete and second if it returns you to the start point.
 */
 
-let walk = ['e','w','e','w','s','n'];
+let walk = ['e','w','e','w','s','n', 's', 'n', 's', 'n'];
 function isValidWalk(walk) {
-    let ns = 0;
-    let ew = 0;
+    let measure = 0;
     let minutes = 0;
 
     for (let i = 0; i < walk.length; i++) {
-        minutes += 1;
         console.log(walk[i]);
         switch (walk[i]) {
             case 'n': 
-                console.log('nnnn');
-            case 's':
-                console.log('ssss');
+                measure += 1;
+                minutes += 1;
+                break;
+            case 's': 
+                measure -= 1;
+                minutes += 1;
+                break;
             case 'e':
-                console.log('eeeee');
+                measure += 0.5;
+                minutes += 1;
+                break;
             case 'w':
-                console.log('wwww');
+                measure -= 0.5;
+                minutes += 1;
+                break;
+            default: 
+                console.log('not a proper direction');
         }
-        console.log(`ns is now ${ns}`);
     }
-    console.log(`ns is ${ns}, ew is ${ew}, minutes is ${minutes}`)
+    console.log(measure);
+    console.log(minutes);
+    return (measure === 0 && minutes === 10) ? true : false;
 }
 
 console.log(isValidWalk(walk));
+
