@@ -2,15 +2,15 @@
 given a string return its position in the alphabet i.e. a = 1 b = 2 etc 
 */
 
-let text = 'book';
+let text = '111111000000abcdefghiJkliM111111110000nopqrstuvwxyz';
 function alphabetPosition(text) {
-    let alphabet = 'abcdefghijklmnopqrstuvwxyz';
-    let newArr = [];
+    text = text.toLowerCase();
+    let regexx = /^[a-z]$/;
+    console.log(text);
     for (let i = 0; i < text.length; i++) {
-        newArr.push((alphabet.indexOf(text[i])+1));
-        
+        if (regexx.test(text[i])) {
+        console.log(text.charCodeAt(i)); }
     }
-    return newArr;
 
 }
 
