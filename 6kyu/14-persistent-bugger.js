@@ -8,3 +8,19 @@ example input output
 take the number and split it into an array... take array and multiply numbers together... if numbers are greater than 10 then repeat
 */
 
+function persistence(num) {
+
+    let countt = 0;
+    while (num >= 10) {
+        countt++
+        num = num.toString().split('').reduce((accu, curr) => {
+            return accu * curr;
+        }, 1)
+        }
+    return countt;
+    }
+
+
+console.log(persistence(4));
+
+
