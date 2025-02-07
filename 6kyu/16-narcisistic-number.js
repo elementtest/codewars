@@ -13,3 +13,9 @@ let newVal = value.toString().split('').map(num => {return Number(num) ** (value
 }
 
 console.log(narcissistic(153));
+
+/*
+function narcissistic ( value ) {
+return ('', + value).split('')
+}
+*/
