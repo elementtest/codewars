@@ -1,0 +1,4 @@
+/*
+narcissistic number is a number that is split up and then raised to the power of the number of digits 
+given input of a number output whether true or false regarding that number being a narcisistic number or not
+*/
