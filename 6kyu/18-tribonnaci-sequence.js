@@ -9,14 +9,9 @@ first n elements - signature included of the so needed sequence
 
 
 function tribonaci(signature, n) {
-    let newVall = 0;
-    for (let i = 0; i < signature.length; i++) {
-        newVall += signature[i];
-    }
-    signature.push(newVall);
-    while (signature.length <= n) {
-    for (let j = 3; j < n; j++) {
-    }
+    let countt = 0;
+    while (signature.length < n) {
+
     }
 }
 console.log(tribonaci([1,1,1], 10));
