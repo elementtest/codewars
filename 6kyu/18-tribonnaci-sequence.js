@@ -31,5 +31,12 @@ function tribonaci(signature, n) {
 
 console.log(tribonaci([1,1,1], 1));
 /*
-weird edge case of 1 equalling 1?
+learned a lot with this one
+
+function trib(sig, n) {
+for (var i = 0; i < n-3; i++) {
+sig.push(sig[i] + sig[i+1] + sig[i+2])
+}
+return sig.slice(0,n);
+}
 */
