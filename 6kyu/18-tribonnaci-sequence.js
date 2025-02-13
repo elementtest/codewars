@@ -14,9 +14,7 @@ function tribonaci(signature, n) {
         return [];
     } else if (n == 1) {
         return signature[0];
-    } 
-
-    else {
+    } else {
     while (signature.length < n) {
         let numm = 0;
         numm += signature[countt];
