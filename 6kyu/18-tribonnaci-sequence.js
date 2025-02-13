@@ -38,3 +38,15 @@ sig.push(sig[i] + sig[i+1] + sig[i+2])
 return sig.slice(0,n);
 }
 */
+
+/*
+another possible issue... is that the problem is not necessarily looking to return the array
+although my code passed it is not the most optimal
+
+the most optimal is to use slice to return how many elements
+
+return sig.slice(0,n)
+
+because some edge cases would only want you to return one value if n is 1;
+
+*/
