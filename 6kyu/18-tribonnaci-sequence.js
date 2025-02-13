@@ -9,9 +9,27 @@ first n elements - signature included of the so needed sequence
 
 
 function tribonaci(signature, n) {
-    let countt = 0;
-    while (signature.length < n) {
+    let countt = 2;
+    if (n == 0) {
+        return [];
+    } else if (n == 1) {
+        return signature[0];
+    } 
 
+    else {
+    while (signature.length < n) {
+        let numm = 0;
+        numm += signature[countt];
+        numm += signature[countt-1];
+        numm += signature[countt-2];
+        signature.push(numm);
+        countt++;
+        }
+        return signature;
     }
 }
-console.log(tribonaci([1,1,1], 10));
+
+console.log(tribonaci([1,1,1], 1));
+/*
+weird edge case of 1 equalling 1?
+*/
