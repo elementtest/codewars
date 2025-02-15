@@ -3,6 +3,7 @@ given a sequence of letters such as:
 AAAABBBBBCCDDDDDAAABBBBB
 return
 ABCDAB
+k
 */
 function uniqueInOrder(iterable) {
     return iterable.split('').map((elm, idx, array) => {
