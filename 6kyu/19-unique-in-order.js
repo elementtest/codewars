@@ -4,6 +4,12 @@ AAAABBBBBCCDDDDDAAABBBBB
 return
 ABCDAB
 */
-var uniqueInOrder=function(iterable) {
-    
+function uniqueInOrder(iterable) {
+    return iterable.split('').map((elm, idx, array) => {
+        if (array[idx] !== array[idx+1]) {
+            return array[idx];
+        }
+    }).filter(fuzz => fuzz !== undefined);
 }
+
+console.log(uniqueInOrder('AAAABBBBCCCDDDAAABBBB'))
