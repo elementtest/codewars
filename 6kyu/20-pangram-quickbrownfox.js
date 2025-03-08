@@ -5,9 +5,14 @@ maybe try and use match to see... look into match more....
 */
 
 function isPangram(string) {
-    string = string.toLowerCase();
-    let regxx = /[a-z]/g;
-    return string.match(regxx).length === 26 ? true : false;
+    let array = [];
+    string = string.toLowerCase().replace(/\s+/g, '');
+    for (let i = 0; i < string.length; i++) {
+        array.push(string.charCodeAt(i));
+    }
+    return ([...new Set(array)].reduce((accu, curr) => {
+        return accu + curr;
+    }, 0) === 2847) ? true : false;
 }
 
-console.log(isPangram('The quick brown fox jumps over the lazy dog'));
+console.log(isPangram('This is not a pangram.'));
