@@ -5,14 +5,17 @@ maybe try and use match to see... look into match more....
 */
 
 function isPangram(string) {
-    let array = [];
     string = string.toLowerCase().replace(/\s+/g, '');
-    for (let i = 0; i < string.length; i++) {
-        array.push(string.charCodeAt(i));
-    }
-    return ([...new Set(array)].reduce((accu, curr) => {
-        return accu + curr;
-    }, 0) === 2847) ? true : false;
+
+    let arr = (new Set([...string]).size === 26) ? true : false;
+    return arr;
+
+
 }
 
-console.log(isPangram('This is not a pangram.'));
+console.log(isPangram('aaaa bbb d ccc ee ff gg hijklmno pqrs sss tuuuuvvv wwwwxxxyyzzz'));
+/*
+take a string and convert it to lowercase... then replace all the non abcdefg characters with nothing... 
+make a new variable... turn the string into a Set which is a unique Set of values think a Set of cards... you have to use the spread operator on the it to turn the string into an array.  length also does not work 
+for Sets so you have to do size and you can check to see if its true or false with the tertiary operator
+*/
