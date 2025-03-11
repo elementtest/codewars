@@ -1,5 +1,5 @@
 /*
-given a sentence return true if it contains every single letter of the alphabet at least once
+Given a sentence return true if it contains every single letter of the alphabet at least once
 
 maybe try and use match to see... look into match more.... 
 */
