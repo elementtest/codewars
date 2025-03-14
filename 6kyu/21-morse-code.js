@@ -56,6 +56,6 @@ const extendedMorseCodeDict = {
   ".--.-.": "@",  // At sign (@)
 };
 
-let decodeMorse = function(morseCode) {
+let string = ".-";
 
-}
+console.log(extendedMorseCodeDict[string]);
