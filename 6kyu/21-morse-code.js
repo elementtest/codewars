@@ -58,4 +58,4 @@ const MorseDict = {
 
 let string = ".-";
 
-console.log(extendedMorseCodeDict[string]);
+console.log(MorseDict[string]);
