@@ -56,6 +56,12 @@ const MorseDict = {
   ".--.-.": "@",  // At sign (@)
 };
 
-let string = ".-";
+let morseCode = '.... . -.--   .--- ..- -.. .';
 
-console.log(MorseDict[string]);
+//console.log(MorseDict[morseCode]);
+
+decodeMorse = function(morseCode) {
+    morseCode = morseCode.split(" ");
+}
+
+
