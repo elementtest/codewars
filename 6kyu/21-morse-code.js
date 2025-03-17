@@ -2,6 +2,13 @@
 Given an input of morse code, output the message in English it would produce.  
 
 first time using a predefinited object dictionary named MORSE_CODE
+
+DETAILS:  
+a single space is used to seperate the character codes
+
+3 spaces are used to seperate the words 
+
+extra spaces before or after the code have no meaning and should be ignored
 */
 
 const MorseDict = {
@@ -61,11 +68,13 @@ let morseCode = '.... . -.--   .--- ..- -.. .';
 //console.log(MorseDict[morseCode]);
 
 decodeMorse = function(morseCode) {
-    morseCode = morseCode.split(" ").filter(x => x !== '');
-    //return morseCode;
+    morseCode = morseCode.trim().split('   ');
     for (let i = 0; i < morseCode.length; i++) {
-        console.log(MorseDict[morseCode[i]]);
+
     }
+    //for (let i = 0; i < morseCode.length; i++) {
+    //    console.log(MorseDict[morseCode[i]]);
+    //}
 }
 
 console.log(decodeMorse(morseCode));
