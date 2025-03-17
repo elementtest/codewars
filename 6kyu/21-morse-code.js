@@ -61,7 +61,8 @@ let morseCode = '.... . -.--   .--- ..- -.. .';
 //console.log(MorseDict[morseCode]);
 
 decodeMorse = function(morseCode) {
-    morseCode = morseCode.split(" ")
+    morseCode = morseCode.split(" ").filter(x => x !== '');
+    //return morseCode;
     for (let i = 0; i < morseCode.length; i++) {
         console.log(MorseDict[morseCode[i]]);
     }
