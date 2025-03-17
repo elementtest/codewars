@@ -70,6 +70,9 @@ let morseCode = '.... . -.--   .--- ..- -.. .';
 decodeMorse = function(morseCode) {
     morseCode = morseCode.trim().split('   ');
     for (let i = 0; i < morseCode.length; i++) {
+        for (let j = 0; j < morseCode.length; j++) {
+            console.log(morseCode[j]);
+        }
 
     }
     //for (let i = 0; i < morseCode.length; i++) {
