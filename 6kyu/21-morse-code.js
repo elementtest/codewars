@@ -63,21 +63,37 @@ const MorseDict = {
   ".--.-.": "@",  // At sign (@)
 };
 
-let morseCode = '.... . -.--   .--- ..- -.. .';
+//let morseCode = '.... . -.--   .--- ..- -.. .';
+
+let morseCode = '.... . .-.. .-.. ---   .-- --- .-. .-.. -..   - .... .. ...   .. ...   .-   - . ... -';
+// morse code for HELLO WORLD THIS IS A TEST
+
+
+
+
 
 //console.log(MorseDict[morseCode]);
 
 decodeMorse = function(morseCode) {
+    let arr = [];
+    let countter = 0;
     morseCode = morseCode.trim().split('   ');
     for (let i = 0; i < morseCode.length; i++) {
-        for (let j = 0; j < morseCode.length; j++) {
-            console.log(morseCode[j]);
+        if (countter > 0 ) {
+            arr.push(' ')
+        }
+        let morseSecond = morseCode[i].split(' ');
+        for (let j = 0; j < morseSecond.length; j++) {
+            countter++;
+            //console.log(MorseDict[morseSecond[j]]);
+            arr.push(MorseDict[morseSecond[j]]);
+            //console.log(MorseDict[morseSecond[j]]);
         }
 
     }
-    //for (let i = 0; i < morseCode.length; i++) {
-    //    console.log(MorseDict[morseCode[i]]);
-    //}
+    //return arr.join('');
+    return '"' + arr.join('') + '"';
+
 }
 
 console.log(decodeMorse(morseCode));
