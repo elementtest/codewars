@@ -99,3 +99,8 @@ decodeMorse = function(morseCode) {
 console.log(decodeMorse(morseCode));
 
 
+/*
+POSSIBLE SOLUTIONS
+
+
+*/
