@@ -11,17 +11,19 @@ n * k = 89
 
 function digPow(n, p) {
     let newArr = [];
-    n = n.toString().split('');
-    for (let i = 0; i < n.length; i++) {
-        if (i === 0) {
-            console.log(Math.pow(n,p));
-            //newArr.push(Math.pow(n,p));
-        } else {
-            newArr.push(Math.pow(n,(p+i)));
-        }
+    r = n.toString().split('');
+    for (let i = 0; i < r.length; i++) {
+        newArr.push(Math.pow(Number(r[i]), p+i));
     }
+    let redArr = newArr.reduce((accu, curr) => {
+        return accu + curr;
+    },0);
+
+    let k = redArr / n;
+
+    return k % 1 === 0 ? k : -1;
+
 }
 
-console.log(digPow(89));
-
+console.log(digPow(46288, 3));
 
