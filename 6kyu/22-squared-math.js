@@ -10,10 +10,15 @@ n * k = 89
 */
 
 function digPow(n, p) {
-    let initt = 0;
+    let newArr = [];
     n = n.toString().split('');
     for (let i = 0; i < n.length; i++) {
-
+        if (i === 0) {
+            console.log(Math.pow(n,p));
+            //newArr.push(Math.pow(n,p));
+        } else {
+            newArr.push(Math.pow(n,(p+i)));
+        }
     }
 }
 
