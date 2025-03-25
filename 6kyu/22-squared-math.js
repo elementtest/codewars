@@ -15,15 +15,19 @@ function digPow(n, p) {
     for (let i = 0; i < r.length; i++) {
         newArr.push(Math.pow(Number(r[i]), p+i));
     }
-    let redArr = newArr.reduce((accu, curr) => {
-        return accu + curr;
-    },0);
 
-    let k = redArr / n;
+    let sum = newArr.reduce((accu, curr) => accu + curr, 0);
 
-    return k % 1 === 0 ? k : -1;
+    return sum % n === 0 ? sum : -1;
 
 }
 
 console.log(digPow(46288, 3));
 
+/*
+function digPow(n, p) {
+    var x = String(n).split("").reduce((s, d, i) => s + Math.pow(d, p + i), 0)
+
+    return x % n ? -1 : x / n
+}
+*/
