@@ -20,3 +20,15 @@ function findEvenIndex(arr) {
 }
 
 console.log(findEvenIndex([1,2,3,4,3,2,1]));
+
+/*
+take your time to understand what the question is asking and try to sovle it manually first.. what is the manual process you would need to solve the problem?  
+
+go to index zero.  
+sum all the numbers to the right of that.  
+is sum of right hand side equal to that?  
+if yes:  return -1 
+if no:  
+go to next number
+add index zero to index one.  
+*/
