@@ -13,7 +13,9 @@ function findEvenIndex(arr) {
         for (let j = (i+1); j < arr.length; j++) {
             //console.log(j);
             summTwo+= arr[j];
-            console.log(summTwo);
+            if (summOne === summTwo) {
+                return arr[j];
+            }
         }
     }
 
@@ -21,14 +23,15 @@ function findEvenIndex(arr) {
 
 console.log(findEvenIndex([1,2,3,4,3,2,1]));
 
-/*
-take your time to understand what the question is asking and try to sovle it manually first.. what is the manual process you would need to solve the problem?  
 
-go to index zero.  
-sum all the numbers to the right of that.  
-is sum of right hand side equal to that?  
-if yes:  return -1 
-if no:  
-go to next number
-add index zero to index one.  
+/*
+manually explain what needs to happen:
+go through each number
+start with first number
+sum numbers to left of it (zero)
+sum numbers to the right of it (?)
+if left sum is equal to the right 
+then: return the number (n)
+if no number where this exists: 
+return -1
 */
