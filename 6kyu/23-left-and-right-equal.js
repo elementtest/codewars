@@ -3,21 +3,16 @@ find the index position N in an array where the sum of all the integers on the r
 */
 
 function findEvenIndex(arr) {
-    let summOne = 0;
+    let summ = arr.reduce((a,b) => a + b, 0);
+    let left = 0;
     for (let i = 0; i < arr.length; i++) {
-        //console.log(i);
-        summOne += arr[i];
-        //console.log(summOne);
-        console.log('ok');
-        let summTwo = 0;
-        for (let j = (i+1); j < arr.length; j++) {
-            //console.log(j);
-            summTwo+= arr[j];
-            if (summOne === summTwo) {
-                return arr[j];
-            }
+        let right = summ - left - arr[i];
+        if (right === left) {
+            return i;
         }
+        left += arr[i];
     }
+    return -1;
 
 }
 
