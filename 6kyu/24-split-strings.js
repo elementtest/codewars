@@ -7,10 +7,31 @@ place an underscore _
 */
 
 function solution(str) {
-    return str.split(/.{1,2}/g);
+    let newArr = [];
+    let countt = 0;
+    if (str.length % 2 === 0) {
+        console.log('string is even length');
+    } else {
+        console.log('string is odd length');
+        str = str + "_";
+    }
+    console.log(str.length);
+    console.log(str);
+    for (let i = 0; i < str.length; i++) {
+        if (countt !== 2) {
+            newArr.push(str[i]);
+            countt++;
+        } else {
+            newArr.push('%');
+            countt = 0;
+        }
+    }
+    //console.log(newArr);
+    //return str.split(/(?=\w{2})/g);
+    console.log(newArr.toString().split('%'));
 }
 
-console.log(solution('abcdefghij'));
+console.log(solution('ddd'));
 
 /*
 problem... the split() method is looking at the string then 
