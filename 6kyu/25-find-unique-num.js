@@ -5,15 +5,27 @@ the tests contain some very huge arrays. so think about performance.
 */
 
 function findUniq(arr) {
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] !== arr[i+1]) {
-            return arr[i+1];
+    if ((arr[0] !== arr[1]) && (arr[0] !== arr[2])) {
+        return arr[0];
+    } else {
+        for (let i =1; i < arr.length; i++) {
+            //console.log(arr[i]);
+            //console.log(arr[i-1]);
+            //console.log('k');
+            if (arr[i] !== arr[i-1]) {
+                return arr[i]
+            }
         }
     }
+
+
     }
 
-console.log(findUniq([1,1,1,2,1,1]));
+console.log(findUniq([1,1,1,0,1,1,1,1,1]));
 
 /*
-
+function findUniq(arr) {
+arr.sort((a,b)=>a-b);
+return arr[0]==arr[1]?arr.pop():arr[0]
+}
 */
