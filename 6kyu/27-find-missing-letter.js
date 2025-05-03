@@ -9,3 +9,9 @@ i.e.
 ['D', 'E', 'F', 'H']
 output 'G'
 */
+
+function findMissingLetter(array) {
+    return array.charCodeAt();
+}
+
+console.log(findMissingLetter(['a','b','c','d']));
