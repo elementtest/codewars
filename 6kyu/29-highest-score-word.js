@@ -18,3 +18,16 @@ input : string of letters
 output : score based on 1 = a and 26 = z
 */
 
+let string = 'abcdefghijklmnopqrstuvwxyz';
+
+function high(x) {
+    let summ = 0;
+    for (let i = 0; i < x.length; i++) {
+        summ += ((x[i].charCodeAt(0)) - 96);
+    }
+    return typeof summ;
+
+}
+
+
+console.log(high(string))
