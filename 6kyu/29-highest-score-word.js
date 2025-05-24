@@ -18,22 +18,25 @@ input : string of letters
 output : score based on 1 = a and 26 = z
 */
 
-let string = 'a aa';
+let input = 'the quick brown fox jumped over the lazy dog';
 
 function high(x) {
-    let summ = 0;
-    let testt = 0;
-    string = string.split(' ');
-    for (let i = 0; i < x.length; i++) {
-        for (let j = 0; j < x[i].length; j++) {
-                testt += ((x[i].charCodeAt(j)) - 96);
+    let maxScore = 0;
+    let maxWord = '';
+    let words = x.split(' ');
+
+    for (let i = 0; i < words.length; i++) {
+        let wordScore = 0;
+        for (let j = 0; j < words[i].length; j++) {
+            wordScore += words[i].charCodeAt(j) - 96;
         }
-        console.log(testt);
-        //console.log('j loop iteration done now testt is');
-        //console.log(testt);
-            }
-    return summ;
+
+        if (wordScore > maxScore) {
+            maxScore = wordScore;
+            maxWord = words[i];
+        }
+    }
+    return maxWord + maxScore;
 }
 
-
-console.log(high(string))
+console.log(high(input));
