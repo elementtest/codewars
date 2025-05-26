@@ -29,6 +29,8 @@ function high(x) {
         let wordScore = 0;
         for (let j = 0; j < words[i].length; j++) {
             wordScore += words[i].charCodeAt(j) - 96;
+            // bracked notation for accessing elements by index read from left to right
+            console.log(words[i][j]); // same as grouping with parens
         }
 
         if (wordScore > maxScore) {
