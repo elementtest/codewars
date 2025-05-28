@@ -18,7 +18,7 @@ input : string of letters
 output : score based on 1 = a and 26 = z
 */
 
-let input = 'the quick brown fox jumped over the lazy dog';
+let input = 'the quick brown zzzzzzzzz fox jumped over the lazy dog';
 
 function high(x) {
     let maxScore = 0;
