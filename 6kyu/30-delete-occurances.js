@@ -14,3 +14,7 @@ N is 1
 becomes: 
 [20,37,21]
 */
+
+function deleteNth(arr,n) {
+
+}
