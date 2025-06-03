@@ -18,3 +18,6 @@ becomes:
 function deleteNth(arr,n) {
 
 }
+
+
+console.log(deleteNth([1,2,3,1,2,3,1,2,3], 2))
