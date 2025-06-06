@@ -6,18 +6,16 @@ const basicFunct = function (radius, loopVar, numm) {
         output.push(loopVar * Math.pow(radius[i], numm))
     }
     return output;
-
 }
 
-const calculateArea = function (radius) {
-    const output = [];
-    for(let i = 0; i<radius.length; i++) {
-        output.push(Math.PI * radius[i] * radius[i]);
-    }
-    return output;
+const calculateArea = function (callback) {
+    return callback([3,1,2,4], (Math.PI), 2)
 };
 
-const calculateCircumference = function (radius) {
+console.log(calculateArea(basicFunct));
+
+const calculateCircumference = function (callback) {
+    callback([3,1,2,4], (Math.))
     const output = [];
     for(let i = 0; i<radius.length; i++) {
         output.push(2* Math.PI * radius[i]);
@@ -32,3 +30,4 @@ const calcDiameter = function (radius) {
     }
     return output;
 }
+
