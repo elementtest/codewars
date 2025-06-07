@@ -1,3 +1,9 @@
+/*
+practice for higher-order functions... look that each function takes as an argument callback... and each funciton is returning the params required for basicFunct (the first function)... the console log is 
+then linking the two of them toghether... i.e. calculate Area and then basicFunct is being fed in as an argument
+    */
+
+
 //const radius = [3,1,2,4];
 
 const basicFunct = function (firstt, radius, loopVar, numm) {
