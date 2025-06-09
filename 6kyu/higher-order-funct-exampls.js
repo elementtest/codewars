@@ -1,3 +1,7 @@
+/*
+example used in conjunction with the file callback-higher-order.js
+    */
+
 const radius = [3,1,2,4];
 
 const basicFunct = function (radius, loopVar, numm) {
