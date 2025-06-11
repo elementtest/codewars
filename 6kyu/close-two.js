@@ -2,9 +2,20 @@
 continued practice of closures
 */
 
-function myFunct() {
-    console.log(x);
-    var x = 10;
+function counter() {
+    let count = 0;
+
+    function increment() {
+        count++;
+        console.log(count);
+
+    }
+
+    return increment;
 }
 
-myFunct();
+const myFunc = counter();
+
+myFunc();
+myFunc();
+myFunc();
