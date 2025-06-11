@@ -1,0 +1,3 @@
+/*
+continued practice of closures
+*/
