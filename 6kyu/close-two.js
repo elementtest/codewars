@@ -2,9 +2,11 @@
 continued practice of closures
 */
 
-var addTo = function (passed) {
-    var inner = 2;
-    return passed + inner;
-};
+function myy() {
+    let localVal = "i'm local!";
+    console.log(localVal);
+}
 
-console.log(addTo(3));
+myy();
+
+console.log(localVar);
