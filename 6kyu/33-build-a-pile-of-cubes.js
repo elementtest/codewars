@@ -18,3 +18,13 @@ function findNb(m) {
 }
 
 console.log(findNb());
+/*
+var n = 0;
+while (m < 0) m -= ++n**3;
+return m ? -1 : n;
+different way of looking at the problem... sees m and comparing to the number... you need to 
+substract away from the number and if it is truthy return -1... and if it is falsy i.e. zero then 
+return the number because you got it.  
+++n will increment BEFORE the calculation is done 
+**3 will cube n ===> n * n * n
+*/
