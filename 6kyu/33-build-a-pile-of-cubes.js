@@ -17,7 +17,7 @@ function findNb(m) {
 
 }
 
-console.log(findNb());
+console.log(findNb(77));
 /*
 var n = 0;
 while (m < 0) m -= ++n**3;
