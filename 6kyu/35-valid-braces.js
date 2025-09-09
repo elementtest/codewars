@@ -8,8 +8,9 @@ all input strings will be nonempty, and will only consist of parentheses, bracke
 
 
 function validParentheses(parenStr) {
-    let matches = parenStr.match(/[()\[\]{}]/g).length;
-    return matches;
+    //let matches = parenStr.match(/[()\[\]{}]/g).length;
+    //return matches;
+    return parenStr.match(/[\[{(]/g).length === parenStr.match(/[\])}]/g).length ? true : false;
 
 
 }
