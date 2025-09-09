@@ -8,15 +8,11 @@ all input strings will be nonempty, and will only consist of parentheses, bracke
 
 
 function validParentheses(parenStr) {
-    for (let i = 0; i < parenStr.length; i++) {
+    let matches = parenStr.match(/[()\[\]{}]/g).length;
+    return matches;
 
-    }
 
 }
 
-/*
-search through the string.... basically has to match the character right?  so... 
-have a for loop... loop thru the string... look for the other character....
-do two for loops.
 
-*/
+console.log(validParentheses('{}{}{}{}{}{}'))
