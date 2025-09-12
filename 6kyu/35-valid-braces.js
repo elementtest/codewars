@@ -7,13 +7,17 @@ all input strings will be nonempty, and will only consist of parentheses, bracke
 */
 
 
-function validParentheses(parenStr) {
-    //let matches = parenStr.match(/[()\[\]{}]/g).length;
+function validParentheses(braces) {
+    //let matches = braces.match(/[()\[\]{}]/g).length;
     //return matches;
-    return parenStr.match(/[\[{(]/g).length === parenStr.match(/[\])}]/g).length ? true : false;
+    //return braces.match(/[\[{(]/g).length === braces.match(/[\])}]/g).length ? true : false;
+    const oneR = (braces.match(/\[/g)?.length === braces.match(/\]/g)?.length);
+    const twoR = (braces.match(/{/g)?.length === braces.match(/}/g)?.length);
+    const threeR = (braces.match(/\(/g)?.length === braces.match(/\)/g)?.length);
 
-
+    return (oneR && twoR && threeR) ? true : false;
 }
 
 
-console.log(validParentheses('{}{}{}{}{}{}'))
+
+console.log(validParentheses('[]{}()]'));
