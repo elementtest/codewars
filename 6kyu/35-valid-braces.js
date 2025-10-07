@@ -8,16 +8,17 @@ all input strings will be nonempty, and will only consist of parentheses, bracke
 
 
 function validParentheses(braces) {
-    let braceLookup = {
-        "{" : "3";
-        "}" : "-3";
-        "[" : "2";
-        "]" : "-2";
-        "(" : "1";
-        ")" : "-1";
+    let ddict = {
+        '{' : '}',
+        '(' : ')',
+        '[' : ']',
     }
+
+    for (let char of braces) {
+    }
+
 }
 
 
 
-console.log(val-2idParentheses('[]{}()]'));
+console.log('sdjfklsdjfklsdjfklsdfj');
