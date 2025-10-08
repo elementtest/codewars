@@ -9,16 +9,11 @@ all input strings will be nonempty, and will only consist of parentheses, bracke
 
 function validParentheses(braces) {
     let ddict = {
-        '{' : '}',
-        '(' : ')',
-        '[' : ']',
+        '}' : '{',
+        ')' : '(',
+        ']' : '[',
     }
-
-    for (let char of braces) {
-    }
-
 }
 
 
-
-console.log('sdjfklsdjfklsdjfklsdfj');
+console.log(validParentheses('[]'))
