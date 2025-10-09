@@ -11,5 +11,9 @@ isValidHTML("<div><p></span></p></div>")  // false
 */
 
 function htmlChecker(html) {
+    html = html.split(/(?=<)/);
+    console.log(html);
 
 }
+
+console.log(htmlChecker("<div><p></p></div>"))

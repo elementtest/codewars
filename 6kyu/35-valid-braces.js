@@ -13,7 +13,17 @@ function validParentheses(braces) {
         ')' : '(',
         ']' : '[',
     }
+    let stack = [];
+
+    for (let char of braces) {
+        if (['(','[','{'].includes(char)) {
+            stack.push(char);
+        } else if (stack.pop() !== ddict[char]) {
+            return false;
+        }
+    }
+    return stack.length === 0 ? true : false;
 }
 
 
-console.log(validParentheses('[]'))
+console.log(validParentheses('(((((])))))'))
