@@ -8,3 +8,5 @@ function abbrevName(name) {
   initials = initials.slice(0, -1);
   return initials.toUpperCase();
 }
+// console.log("hello".slice(-4 , -1));
+// .slice(start, end) includes the start index but does NOT include the end index. so it’s like you’re cutting from point A up to (but not touching) point B.
